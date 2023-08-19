@@ -1,13 +1,11 @@
 // import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Head from 'next/head'
-const inter = Inter({ subsets: ['latin'] })
+// import Head from 'next/head'
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
-      className={`flex flex-col justify-between p-24 ${inter.className}`}
-    >
+    
       <div className= "container md:px-5 md:py-24 mx-auto flex font-serif">
         <div className= "lg:w-1/2 md:w-1/2 bg-white rounded-lg p-8 flex flex-col  w-full mt-10 md:mt-0 shadow-md">
           <h2 className= "text-gray-900 text-lg mb-1 font-bold title-font ">Add To Do</h2>
@@ -24,6 +22,6 @@ export default function Home() {
         </div>
       </div>
 
-    </main>
+    
   )
 }
