@@ -81,16 +81,16 @@ const MyTodo = () => {
                     {
                         myToDo.map(item =>
                             <div class="py-8 flex flex-wrap md:flex-nowrap">
-                                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col mr-5">
                                     <span class="font-semibold title-font text-gray-700">{item.title}</span>
                                     <span class="mt-1 text-gray-500 text-sm">{item.date}</span>
                                 </div>
                                 <div class="md:flex-grow">
                                     <p class="leading-relaxed text-2xl font-medium text-gray-900 title-font mb-2">{item.description}</p>
                                 </div>
-                                <div className='w-1/4 '>
-                                    <button onClick={() => handleDelete(item.title)} className="text-white w-1/3 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg mr-5">Delete</button>
-                                    <button onClick={() => handleUpdate(item.title)} className="text-white w-1/3 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Update</button>
+                                <div className='w-full flex flex-col md:flex-row md:w-1/4 '>
+                                    <button onClick={() => handleDelete(item.title)} className="text-white w-1/3 mb-5 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg mr-5">Delete</button>
+                                    <button onClick={() => handleUpdate(item.title)} className="text-white w-1/3 mb-5 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Update</button>
                                 </div>
                             </div>)
                     }
